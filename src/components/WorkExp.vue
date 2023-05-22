@@ -11,7 +11,7 @@ defineProps<Props>();
 </script>
 
 <template>
-	<div class="job__wrapper" v-for="item in job" :key="item.company">
+	<div v-for="item in job" :key="item.company" class="job__wrapper">
 		<div class="job__title">{{ item.title }}</div>
 		<div class="job__company">
 			{{ item.company }}

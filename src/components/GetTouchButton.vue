@@ -7,9 +7,9 @@ defineProps<Props>();
 </script>
 
 <template>
-	<a href="href" v-if="href"
-		><div class="button__wrapper">{{ content }}</div></a
-	>
+	<a v-if="href" target="_blank" :href="href">
+		<div class="button__wrapper">{{ content }}</div>
+	</a>
 	<div v-else class="button__wrapper">{{ content }}</div>
 </template>
 

@@ -1,10 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const mailto = 'mailto:allidareused@gmail.com';
+const github = 'https://astraychildmarion.github.io/ui_library/?path=/docs/ui-layout-header--docs';
+const linkedIn = 'https://www.linkedin.com/in/marion-ma-326248100/';
+</script>
 
 <template>
 	<header class="header">
 		<ul>
 			<li>
-				<a target="_blank" href="mailto:allidareused@gmail.com">
+				<a target="_blank" :href="mailto">
 					<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<title>Gmail</title>
 						<path
@@ -14,7 +18,7 @@
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="https://astraychildmarion.github.io/ui_library/">
+				<a target="_blank" :href="github">
 					<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<title>GitHub</title>
 						<path
@@ -24,7 +28,7 @@
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="https://www.linkedin.com/in/marion-ma-326248100/">
+				<a target="_blank" :href="linkedIn">
 					<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<title>LinkedIn</title>
 						<path
