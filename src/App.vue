@@ -1,0 +1,193 @@
+<script setup lang="ts">
+import Button from './components/GetTouchButton.vue';
+import PageHeader from './components/PageHeader.vue';
+import WorkExp from './components/WorkExp.vue';
+
+const buttonText = 'Get in Touch!';
+const meName = 'I am Marion,';
+const meIntro = 'Front-end developer.';
+const meLocation = 'Base in Taiwan.';
+const meDetail = 'I am a Front-end developer with experience of 4 years.';
+const skillObj = [
+	{
+		des: 'Versatile Front-end developer </br>familiar with design principles.',
+		ans: 'Vue 3 + Typescript',
+	},
+	{
+		des: 'Communication?</br>No prob.',
+		ans: 'Mandrain (Native), </br>English(Fluent), </br>And some Russian',
+	},
+];
+const job = [
+	{
+		title: 'Front-end Developer',
+		company: 'Yi Teng Technology Ltd',
+		time: '2021-2023 • 1yrs 9 mos',
+	},
+	{
+		title: 'Front-end Developer',
+		company: 'awoo Bros. Internet, Inc.',
+		time: '2019-2021 • 2yrs 1 mos',
+	},
+	{
+		title: 'Web Designer',
+		company: 'GAMA Technology',
+		time: '2017-2019 • 2yrs 2 mos',
+	},
+];
+const seeMyCV = 'More info please see my CV 👇🏼';
+const titleAboutMe = 'About me';
+const titleWorkexp = 'Experience';
+const mailto = 'mailto:allidareused@gmail.com';
+const CVhref = 'https://kindly-hole-407.notion.site/Marion-ff51214b9a5d456ca5d3d55d9955900b';
+</script>
+
+<template>
+	<PageHeader></PageHeader>
+	<section id="me">
+		<div class="me__text">
+			<div class="me__text__intro">
+				Hello, <span class="me__text-color">{{ meName }}</span>
+			</div>
+			<div class="me__text__intro">{{ meIntro }}</div>
+			<div class="me__text__intro">{{ meLocation }}</div>
+			<div class="me__text__detail">{{ meDetail }}</div>
+			<Button :content="buttonText" :href="mailto"></Button>
+		</div>
+		<div class="me__pic"><img class="mask" src="./assets/IMG_2962.jpg" alt="marion" /></div>
+	</section>
+	<section id="skill">
+		<div class="section__title">{{ titleAboutMe }}</div>
+		<template v-for="obj in skillObj" :key="obj.des">
+			<div class="skill__describe" v-html="obj.des"></div>
+			<div class="skill__ans" v-html="obj.ans"></div>
+		</template>
+	</section>
+	<section id="exp">
+		<div class="section__title">{{ titleWorkexp }}</div>
+		<WorkExp :job="job"></WorkExp>
+	</section>
+	<section id="notionCV">
+		<div class="notionCV">
+			{{ seeMyCV }}
+		</div>
+		<Button content="CV" :href="CVhref"></Button>
+	</section>
+	<div class="copyright">Copyright © 2023 Marion Ma</div>
+</template>
+
+<style lang="scss" scoped>
+section {
+	padding: 1rem 0;
+	&:last-child {
+		padding-bottom: 2rem;
+	}
+}
+.section__title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 1rem 0 2rem;
+	color: $content-title;
+}
+#me {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 70px;
+	.me__text {
+		width: 50vw;
+		font-size: 2rem;
+		text-align: center;
+		&__detail {
+			font-size: 1rem;
+			padding: 1.5rem 0;
+		}
+		&-color {
+			font-weight: bolder;
+			font-style: italic;
+			animation: Color 4s linear infinite;
+		}
+	}
+	.me__pic {
+		img {
+			width: 40vw;
+			object-fit: cover;
+			-webkit-mask-size: cover;
+		}
+	}
+	.mask {
+		mask-image: url('./assets/waterColorMask.png');
+		-webkit-mask-image: url('./assets/waterColorMask.png');
+	}
+	@media (max-width: 800px) {
+		flex-direction: column-reverse;
+		.me__text {
+			width: 80vw;
+			font-size: 2rem;
+			text-align: center;
+			padding: 2rem 0;
+			&__detail {
+				font-size: 1rem;
+				padding: 1.5rem 0;
+			}
+			&-color {
+				font-weight: bolder;
+				font-style: italic;
+				animation: Color 4s linear infinite;
+			}
+		}
+		.me__pic {
+			img {
+				width: 70vw;
+				object-fit: cover;
+				-webkit-mask-size: cover;
+			}
+		}
+	}
+}
+#skill {
+	.skill {
+		&__describe {
+			font-weight: 500;
+			font-size: 1rem;
+			color: $content-title;
+			padding: 0.5rem 0;
+		}
+		&__ans {
+			font-weight: 500;
+			font-size: 1rem;
+			color: $content-ans;
+			padding: 0.1rem 1rem 2rem;
+		}
+	}
+}
+.notionCV {
+	padding: 1rem 0;
+}
+.copyright {
+	color: $content-light;
+	font-size: 0.8rem;
+	padding: 2rem 0 0.5rem;
+}
+@keyframes Color {
+	0% {
+		color: $MOTTI-5;
+	}
+
+	20% {
+		color: $MOTTI-2;
+	}
+
+	40% {
+		color: $MOTTI-3;
+	}
+
+	60% {
+		color: $oenir-3;
+	}
+
+	100% {
+		color: $MOTTI-5;
+	}
+}
+</style>
