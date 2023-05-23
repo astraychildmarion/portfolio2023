@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+    "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "publish": "yarn run build && touch ./dist/.nojekyll && gh-pages -d ./dist -t true"
   },
   "dependencies": {
     "vue": "^3.2.47",
@@ -22,6 +23,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.13.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
