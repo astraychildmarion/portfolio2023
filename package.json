@@ -2,12 +2,14 @@
   "name": "profolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://astraychildmarion.github.io/portfolio2023/",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --base=/portfolio2023/",
     "preview": "vite preview",
     "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
-    "publish": "yarn run build && touch ./dist/.nojekyll && gh-pages -d ./dist -t true"
+    "publish": "yarn run build && touch ./dist/.nojekyll && gh-pages -d dist -t true"
   },
   "dependencies": {
     "vue": "^3.2.47",

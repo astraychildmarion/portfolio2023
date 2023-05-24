@@ -40,7 +40,8 @@ const seeMyCV = 'More info please see my CV 👇🏼';
 const titleAboutMe = 'About me';
 const titleWorkexp = 'Experience';
 const mailto = 'mailto:allidareused@gmail.com';
-const CVhref = 'https://kindly-hole-407.notion.site/Marion-ff51214b9a5d456ca5d3d55d9955900b';
+const ChCVhref = 'https://kindly-hole-407.notion.site/Marion-ff51214b9a5d456ca5d3d55d9955900b';
+const EngCVhref = 'https://kindly-hole-407.notion.site/Marion-Ma-d11e95c7f6764efb8d8e1a2b3a4f2605';
 </script>
 
 <template>
@@ -72,7 +73,8 @@ const CVhref = 'https://kindly-hole-407.notion.site/Marion-ff51214b9a5d456ca5d3d
 		<div class="notionCV">
 			{{ seeMyCV }}
 		</div>
-		<Button content="CV" :href="CVhref"></Button>
+		<Button content="Ch CV" :href="ChCVhref"></Button>
+		<Button content="Eng CV" :href="EngCVhref"></Button>
 	</section>
 	<div class="copyright">Copyright © 2023 Marion Ma</div>
 </template>

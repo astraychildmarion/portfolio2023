@@ -7,26 +7,31 @@ defineProps<Props>();
 </script>
 
 <template>
-	<a v-if="href" target="_blank" :href="href">
-		<div class="button__wrapper">{{ content }}</div>
-	</a>
+	<div v-if="href" class="button__wrapper">
+		<a target="_blank" :href="href">{{ content }} </a>
+	</div>
+
 	<div v-else class="button__wrapper">{{ content }}</div>
 </template>
 
 <style lang="scss" scoped>
 .button {
 	&__wrapper {
+		display: inline-block;
 		background-color: $button-bg;
-		color: $button-text;
 		border: 1px solid $button-bg;
-		padding: 0.5rem 1rem;
 		font-size: 1rem;
 		border-radius: 30px;
-		max-width: 8rem;
-		margin: 0 auto;
+		margin: 0 1rem;
 		cursor: pointer;
+		a {
+			padding: 0.5rem 2rem;
+			display: block;
+			color: $button-text;
+		}
 		&:hover {
-			border: 1px solid $button-border;
+			border: 1px solid $button-bg-hover;
+			background-color: $button-bg-hover;
 		}
 	}
 }
