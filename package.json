@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vue-tsc && vite build --base=/portfolio2023/",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "publish": "yarn run build && touch ./dist/.nojekyll && gh-pages -d dist -t true"
@@ -31,6 +31,7 @@
     "typescript": "^5.0.4",
     "vite": "^4.3.2",
     "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-imagemin": "^0.6.1",
     "vue-tsc": "^1.4.2"
   }
 }

@@ -2,7 +2,7 @@
 import Button from './components/GetTouchButton.vue';
 import PageHeader from './components/PageHeader.vue';
 import WorkExp from './components/WorkExp.vue';
-import myJPG from './assets/IMG_2962.jpg';
+import myJPG from '@/assets/IMG_2962.jpg';
 
 const buttonText = 'Get in Touch!';
 const meName = 'I am Marion,';
@@ -119,8 +119,8 @@ section {
 		}
 	}
 	.mask {
-		mask-image: url('./assets/waterColorMask.png');
-		-webkit-mask-image: url('./assets/waterColorMask.png');
+		mask-image: url('@/assets/waterColorMask.png');
+		-webkit-mask-image: url('@/assets/waterColorMask.png');
 	}
 	@media (max-width: 800px) {
 		flex-direction: column-reverse;
