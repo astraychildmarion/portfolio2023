@@ -2,6 +2,7 @@
 import Button from './components/GetTouchButton.vue';
 import PageHeader from './components/PageHeader.vue';
 import WorkExp from './components/WorkExp.vue';
+// import MyJPG from '@assets/IMG_2962.jpg';
 
 const buttonText = 'Get in Touch!';
 const meName = 'I am Marion,';
@@ -55,7 +56,7 @@ const EngCVhref = 'https://kindly-hole-407.notion.site/Marion-Ma-d11e95c7f6764ef
 			<div class="me__text__detail">{{ meDetail }}</div>
 			<Button :content="buttonText" :href="mailto"></Button>
 		</div>
-		<div class="me__pic"><img class="mask" src="./assets/IMG_2962.jpg" alt="marion" /></div>
+		<div class="me__pic"><img class="mask" src="/IMG_2962.jpg" alt="marion" /></div>
 	</section>
 	<section id="skill">
 		<div class="section__title">{{ titleAboutMe }}</div>
