@@ -2,16 +2,16 @@
 import Button from './components/GetTouchButton.vue';
 import PageHeader from './components/PageHeader.vue';
 import WorkExp from './components/WorkExp.vue';
-import myJPG from '@/assets/IMG_2962.jpg';
+import myJPG from './assets/IMG_2962.jpg';
 
 const buttonText = 'Get in Touch!';
 const meName = 'I am Marion,';
-const meIntro = 'Front-end developer.';
+const meIntro = 'Frontend developer.';
 const meLocation = 'Base in Taiwan.';
-const meDetail = 'I am a Front-end developer with experience of 4 years.';
+const meDetail = 'I am a Frontend developer with experience of 4 years.';
 const skillObj = [
 	{
-		des: 'Versatile Front-end developer </br>familiar with design principles.',
+		des: 'Experienced frontend developer <br/> Specializing in SaaS and web applications </br> With a keen eye for design.',
 		ans: 'Vue 3 + Typescript',
 	},
 	{
@@ -21,12 +21,12 @@ const skillObj = [
 ];
 const job = [
 	{
-		title: 'Front-end Developer',
+		title: 'Frontend Developer',
 		company: 'Yi Teng Technology Ltd',
 		time: '2021-2023 • 1yrs 9 mos',
 	},
 	{
-		title: 'Front-end Developer',
+		title: 'Frontend Developer',
 		company: 'awoo Bros. Internet, Inc.',
 		time: '2019-2021 • 2yrs 1 mos',
 	},

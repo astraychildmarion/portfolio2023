@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const mailto = 'mailto:allidareused@gmail.com';
-const github = 'https://astraychildmarion.github.io/ui_library/?path=/docs/ui-layout-header--docs';
+const github = 'https://astraychildmarion.github.io/ui_library/?path=/docs/introduction--docs';
 const linkedIn = 'https://www.linkedin.com/in/marion-ma-326248100/';
 </script>
 
