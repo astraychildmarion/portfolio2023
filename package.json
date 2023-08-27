@@ -12,6 +12,7 @@
     "publish": "yarn run build && touch ./dist/.nojekyll && gh-pages -d dist -t true"
   },
   "dependencies": {
+    "uuid": "^9.0.0",
     "vue": "^3.2.47",
     "vue-i18n": "9"
   },
