@@ -8,11 +8,11 @@ const buttonText = 'Get in Touch!';
 const meName = 'I am Marion,';
 const meIntro = 'Frontend developer.';
 const meLocation = 'Base in Taiwan.';
-const meDetail = 'I am a Frontend developer with experience of 4 years.';
+const meDetail = 'I am a Frontend developer with experience of 5 years.';
 const skillObj = [
 	{
 		des: 'Experienced frontend developer <br/> Specializing in SaaS and web applications </br> With a keen eye for design.',
-		ans: 'Vue 3 + Typescript',
+		ans: 'Vue 3 and React',
 	},
 	{
 		des: 'Communication?</br>No prob.',
@@ -21,13 +21,18 @@ const skillObj = [
 ];
 const job = [
 	{
-		title: 'Frontend Developer',
-		company: 'Yi Teng Technology Ltd',
+		title: 'Frontend Engineer',
+		company: 'Phase 德商飛思',
+		time: '2023-2024 • 8 mos',
+	},
+	{
+		title: 'Frontend Engineer',
+		company: 'Yi Teng Technology Ltd 溢驣',
 		time: '2021-2023 • 1yrs 9 mos',
 	},
 	{
-		title: 'Frontend Developer',
-		company: 'awoo Bros. Internet, Inc.',
+		title: 'Frontend Engineer',
+		company: 'awoo Bros. Internet, Inc. 阿物',
 		time: '2019-2021 • 2yrs 1 mos',
 	},
 	{
