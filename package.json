@@ -9,7 +9,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
-    "publish": "yarn run build && touch ./dist/.nojekyll && gh-pages -d dist -t true"
+    "publish": "yarn build && touch ./dist/.nojekyll && gh-pages -d dist -t true"
   },
   "dependencies": {
     "uuid": "^9.0.0",

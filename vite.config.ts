@@ -5,6 +5,7 @@ import viteImagemin from 'vite-plugin-imagemin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: '/portfolio2023/',
 	plugins: [
 		vue(),
 		eslintPlugin({

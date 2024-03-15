@@ -81,7 +81,7 @@ const EngCVhref = 'https://kindly-hole-407.notion.site/Marion-Ma-d11e95c7f6764ef
 		<Button content="Ch CV" :href="ChCVhref"></Button>
 		<Button content="Eng CV" :href="EngCVhref"></Button>
 	</section>
-	<div class="copyright">Copyright © 2023 Marion Ma</div>
+	<div class="copyright">Copyright © 2024 Marion Ma</div>
 </template>
 
 <style lang="scss" scoped>
