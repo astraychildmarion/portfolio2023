@@ -11,15 +11,21 @@ const meLocation = 'Base in Taiwan.';
 const meDetail = 'I am a Frontend developer with experience of 5 years.';
 const skillObj = [
 	{
-		des: 'Experienced frontend developer <br/> Specializing in SaaS and web applications </br> With a keen eye for design.',
-		ans: 'Vue 3 and React',
+		des: 'Not just a frontend developer.',
+		ans: 'I bring Vue 3, React, and Angular expertise, <br>paired with UI/UX design thinking that goes beyond code.',
 	},
 	{
-		des: 'Communication?</br>No prob.',
-		ans: 'Mandrain (Native), </br>English(Fluent), </br>And some Russian',
+		des: 'With Mandarin, English, and some Russian,',
+		ans: 'I thrive in global teams and cross-cultural projects.',
 	},
 ];
+
 const job = [
+	{
+		title: 'Software Engineer',
+		company: 'Wipro 印度商威普羅',
+		time: '2024-current • 1yr',
+	},
 	{
 		title: 'Frontend Engineer',
 		company: 'Phase 德商飛思',
@@ -28,7 +34,7 @@ const job = [
 	{
 		title: 'Frontend Engineer',
 		company: 'Yi Teng Technology Ltd 溢驣',
-		time: '2021-2023 • 1yrs 9 mos',
+		time: '2021-2023 • 1yr 9 mos',
 	},
 	{
 		title: 'Frontend Engineer',
@@ -81,7 +87,7 @@ const EngCVhref = 'https://kindly-hole-407.notion.site/Marion-Ma-d11e95c7f6764ef
 		<Button content="Ch CV" :href="ChCVhref"></Button>
 		<Button content="Eng CV" :href="EngCVhref"></Button>
 	</section>
-	<div class="copyright">Copyright © 2024 Marion Ma</div>
+	<div class="copyright">Copyright © 2025 Marion Ma</div>
 </template>
 
 <style lang="scss" scoped>
